@@ -1,6 +1,5 @@
-package edu.miu.lab2.Entity;
+package edu.miu.lab3.Entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
