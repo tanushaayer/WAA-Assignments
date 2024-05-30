@@ -1,6 +1,5 @@
-package edu.miu.lab2.Entity;
+package edu.miu.lab3.Entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -8,13 +7,15 @@ import java.util.List;
 
 @Entity
 @Data
-public class User {
+public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
+    private String title;
+    private String content;
+    private String author;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
-    private List<Post> posts;
+    @JoinColumn(name = "post_id")
+    private List<Comment> comments;
 }
