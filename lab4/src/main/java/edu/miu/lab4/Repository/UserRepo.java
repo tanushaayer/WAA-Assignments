@@ -1,6 +1,6 @@
-package edu.miu.lab3.Repository;
+package edu.miu.lab4.Repository;
 
-import edu.miu.lab3.Entity.User;
+import edu.miu.lab4.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
